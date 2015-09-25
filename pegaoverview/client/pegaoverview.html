@@ -1,14 +1,20 @@
 <head>
-  <title>pegaoverview</title>
+  <title>Pega Overview</title>
+  <link rel="stylesheet" href="/packages/neo_reveal-js/reveal.js/css/theme/serif.css" 
+    id="theme"/> 
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <div class="reveal">
+    <div class="slides">
+      {{> title}}
+      {{> agenda}}
+      {{> me }}
+      {{> retrospect}}
+      {{> toInfinity}}
+      {{> designatedFeedback}}
+      {{> analysts}}
+    </div>
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
